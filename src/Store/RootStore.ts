@@ -1,10 +1,12 @@
 import { Action, combineReducers, configureStore, ThunkAction } from '@reduxjs/toolkit';
-import { CounterReducers } from './Reducers/CounterSlice';
+
+import { LocationReducers } from './Reducers/LocationSlice';
 
 
 export const RootStore = configureStore({
   reducer: combineReducers({
-      counter : CounterReducers,
+      
+      locations: LocationReducers
   })
 });
 

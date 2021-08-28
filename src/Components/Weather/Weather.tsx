@@ -1,13 +1,10 @@
-import { selectCurrentCounterValue } from "../../Store/Selectors/counterSelector";
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 
 const Weather = () => {
 
-  const currentCounter = useSelector(selectCurrentCounterValue);
-
     return (
       <div>
-        <p> Weather Component {currentCounter}</p>
+        <p> Weather Component - forecast data to come here</p>
       </div>
     );
   }
