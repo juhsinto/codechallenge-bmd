@@ -1,13 +1,18 @@
-import { Action, combineReducers, configureStore, ThunkAction } from '@reduxjs/toolkit';
+import { Action, getDefaultMiddleware, combineReducers, configureStore, ThunkAction } from '@reduxjs/toolkit';
+import { LoadingReducers } from './Reducers/LoadingSlice';
 
 import { LocationReducers } from './Reducers/LocationSlice';
+import { WeatherReducers } from './Reducers/WeatherSlice';
 
 
 export const RootStore = configureStore({
   reducer: combineReducers({
-      
-      locations: LocationReducers
-  })
+    weather: WeatherReducers,
+    locations: LocationReducers,
+    loading: LoadingReducers
+  }),
+  middleware: getDefaultMiddleware(),
+  devTools: true
 });
 
 export type RootState = ReturnType<typeof RootStore.getState>;

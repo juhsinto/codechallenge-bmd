@@ -7,7 +7,7 @@ class LocationService {
     format: string;
 
     constructor () {
-        this.baseUrl = "https://eu1.locationiq.com/v1/search.php";
+        this.baseUrl = "https://eu1.locationiq.com/v1";
         this.key = "pk.293e9914e79907cf104752752cf30ab3";
         this.format = "json";
     }
