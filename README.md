@@ -28,3 +28,5 @@ Builds the app for production to the `build` folder.
 ## More
 - I used typescript for this project to make it more typesafe & robust, and the reader knows what to expect when accessing objects.
 - I split the code into Services/Store/Components - this is good practice for maintainability & scaling it in future.
+
+Demo Video of tests - https://youtu.be/Vy4e7Boud_s
